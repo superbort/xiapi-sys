@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../xiapi-sys">
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/bindgen-d4cf8d7af61e695f/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/clang-sys-66f1615831227310/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/libc-75ce5b1644513dad/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/log-acdb693f73a60475/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/memchr-dedfa96758f137f6/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/nom-60354a2476de23fb/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/parking_lot_core-d9eed156d8a2c3eb/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/proc-macro2-d6334fd49bac47cb/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/proc-macro2-dea267f24edf7976/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/radium-104fabc72915236d/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/syn-628c365574841b74/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/xiapi-2f96aa1f12bf6629/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/xiapi-sys-432841cab04e96d5/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../xiapi-sys/target/debug/build/xiapi-sys-820d88ee79abb494/out" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../xiapi-sys/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
