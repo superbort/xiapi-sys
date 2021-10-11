@@ -21,7 +21,7 @@ jobs:
     - name: Unpack xiapi
       run: tar -xzf XIMEA_Linux_SP.tgz && cd package
     - name: Install xiapi
-      run: ./install.sh
+      run: ./install
     - name: Build
       run: cargo build --verbose
     - name: Run tests
