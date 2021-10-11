@@ -4,12 +4,23 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
-    println!("cargo:rustc-link-lib=m3api");
+    let target_os = env::var("CARGO_CFG_TARGET_OS").expect("Unknown target OS");
+    let (link_lib, include_path) = match target_os.as_str() {
+        "windows" => ("xiapi64","C:/XIMEA/API/xiAPI"),
+        "linux" => ("m3api", "/opt/XIMEA/include"),
+        _ => ("","") //TODO(alex): Add support for MacOS
+    };
+
+    println!("cargo:rustc-link-lib={}", link_lib);
     println!("cargo:rerun-if-changed=wrapper.h");
+
+    if target_os.as_str() == "windows" {
+        println!("cargo:rustc-link-search={}",include_path);
+    }
 
     let bindings = bindgen::Builder::default()
         .header("wrapper.h")
-        .clang_arg("-I/opt/XIMEA/include")
+        .clang_arg(format!("-I{}", include_path))
         .constified_enum_module(".*")
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
         .derive_default(true)
