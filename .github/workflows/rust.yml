@@ -19,9 +19,9 @@ jobs:
     - name: Download xiapi
       run: wget https://www.ximea.com/downloads/recent/XIMEA_Linux_SP.tgz
     - name: Unpack xiapi
-      run: tar -xzf XIMEA_Linux_SP.tgz && cd package
+      run: tar -xzf XIMEA_Linux_SP.tgz
     - name: Install xiapi
-      run: ./install
+      run: cd package && pwd && ./install
     - name: Build
       run: cargo build --verbose
     - name: Run tests
