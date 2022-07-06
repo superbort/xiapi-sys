@@ -2,8 +2,12 @@
 name = "xiapi-sys"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT"
+description = "Unsafe low-level ffi bindings to the XIMEA API"
+homepage = "https://www.ximea.com"
+repository = "https://github.com/Ximea-GmbH/xiapi-sys"
+keywords = ["bindings", "camera", "image", "ximea"]
+categories = ["external-ffi-bindings"]
 
 [dependencies]
 serial_test = "0.5.1"
