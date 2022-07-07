@@ -1,6 +1,6 @@
 [package]
 name = "xiapi-sys"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "Unsafe low-level ffi bindings to the XIMEA API"
