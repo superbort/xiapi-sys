@@ -8,11 +8,18 @@ fn main() {
     let (link_lib, include_path) = match target_os.as_str() {
         "windows" => ("xiapi64","C:/XIMEA/API/xiAPI"),
         "linux" => ("m3api", "/opt/XIMEA/include"),
-        _ => ("","") //TODO(alex): Add support for MacOS
+        "macos" => ("m3api","/Library/Frameworks/m3api.framework/Headers"),
+        x => panic!("Unknown platform: {x}"),
     };
 
-    println!("cargo:rustc-link-lib={}", link_lib);
     println!("cargo:rerun-if-changed=wrapper.h");
+
+    if target_os.as_str() == "macos" {
+        println!("cargo:rustc-link-search=framework=/Library/Frameworks");
+        println!("cargo:rustc-link-lib=framework=m3api");
+    } else {
+        println!("cargo:rustc-link-lib={}", link_lib);
+    }
 
     if target_os.as_str() == "windows" {
         println!("cargo:rustc-link-search={}",include_path);
