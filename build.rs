@@ -29,7 +29,7 @@ fn main() {
         .header("wrapper.h")
         .clang_arg(format!("-I{}", include_path))
         .constified_enum_module(".*")
-        .parse_callbacks(Box::new(bindgen::CargoCallbacks))
+        .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
         .derive_default(true)
         .generate()
         .expect("Unable to generate bindings");

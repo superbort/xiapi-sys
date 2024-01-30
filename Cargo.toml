@@ -1,6 +1,6 @@
 [package]
 name = "xiapi-sys"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 license = "MIT"
 description = "Unsafe low-level ffi bindings to the XIMEA API"
@@ -10,7 +10,7 @@ keywords = ["bindings", "camera", "image", "ximea"]
 categories = ["external-ffi-bindings"]
 
 [dependencies]
-serial_test = "0.5.1"
+serial_test = "3.0.0"
 
 [build-dependencies]
-bindgen = "0.59.1"
+bindgen = "0.69.2"
