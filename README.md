@@ -5,8 +5,12 @@ These bindings have been tested with xiAPI version 4.25 on Windows and Linux. Ne
 some new features may be unsupported. All cameras that are supported by xiAPI are also supported by these bindings.
 
 ### Requirements
-To use these bindings, the XIMEA software package must be installed in the default path 
+To use these bindings without configuration, the XIMEA software package must be installed in the default path
 (For Windows: C:\XIMEA; For Linux: /opt/XIMEA).
+
+#### Non-standard library location
+If your xiAPI installation uses a non-standard install directory, set `XIAPI_INCLUDE_DIR` to the path of the `$XIAPI/include`
+path to specify the header location.
 
 ### Documentation
 Specific documentation for this package is still WIP.
